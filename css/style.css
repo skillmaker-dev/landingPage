@@ -1,6 +1,6 @@
 body{
     font-size: 62.5%;
-    background-color: white;
+   
 }
 
 /*colors*/
@@ -79,6 +79,12 @@ cursor: pointer;
 background: linear-gradient(180deg, rgba(255,109,109,1) 0%, rgba(255,68,104,1) 38%, rgba(247,65,123,1) 100%);
 }
 
+.btn__count{
+    border-radius: 0px;
+    color: black;
+    height: 45px;
+ 
+}
 .btn__social{
     border-radius: 100%;
     height: 35px;
@@ -103,3 +109,4 @@ background-color: #347cd2;
     color: black;
     background-color: #ffff;
 }
+
