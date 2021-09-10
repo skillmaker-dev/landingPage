@@ -123,7 +123,6 @@ background-color: #347cd2;
     flex-direction: row;
 }
 .card-wide{
-    margin-top: 1rem;
     width: 550px;
     height: 60px;
     flex-direction: column;
@@ -133,6 +132,7 @@ background-color: #347cd2;
 
 
 .card{
+    margin-top: 1rem;
     display: flex;
     background-color: #ffff;
     border-radius: 5px;
