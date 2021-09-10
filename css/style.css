@@ -1,34 +1,105 @@
-
-/*buttons*/
-.btn{
-    width: 130px;
-    height: 35px;
-    border-radius: 20px;
-    box-shadow: none;
-    text-shadow: none;
-    border: none;
-    font-size: 0.75rem;
-    cursor: pointer;
-    font-weight: 700;
-    padding: 0.1rem 0.7REM; 
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+body{
+    font-size: 62.5%;
+    background-color: white;
 }
 
-.btn-primary{
-    background-color: #3260fc;
+/*colors*/
+:root{
+    --blue: #33d2fd;
+}
+
+
+/* buttons */
+.btn{
+    width: 170px;
+    height: 35px;
+    font-family: 'Work Sans',sans-serif ;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn__outline{
+        background-color: transparent;
+        color: white;
+        border: 1.5px solid white;
+        transition: all 0.15s;
+}
+.btn__outline:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn__full{
+    border: none;
+    transition: all 0.15s;
+}
+
+.btn__white{
+    background-color: white;
+    color: black;
+}
+
+.btn__white:hover{
+    background-color: rgb(235, 233, 233);
+}
+
+.btn__blue{
+    background-color: var(--blue);
     color: white;
 }
 
-.btn:hover{
-    background-color: #436fff;
+.btn__blue:hover{
+    background: #4bd8ff;
 }
 
-.btn-icon{
-    width: 23px;
-    color: rgb(255, 255, 255,0.7);
-    margin-right: 0.1rem;
+.btn__wide{
+    width: 380px;
+    border-radius: 30px;
+    font-size: 0.8rem;
 }
 
+.btn-subscribe{
+    width: 370px;
+    height: 65px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: none;
+    background: rgb(254,113,113);
+background: linear-gradient(180deg, rgba(254,113,113,1) 0%, rgba(250,86,118,1) 38%, rgba(247,65,123,1) 100%);
+cursor: pointer;
+
+}
+.btn-subscribe:hover{
+    transition: all 0.5s;
+    background: rgb(255,109,109);
+background: linear-gradient(180deg, rgba(255,109,109,1) 0%, rgba(255,68,104,1) 38%, rgba(247,65,123,1) 100%);
+}
+
+.btn__social{
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    border: none;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-fb{
+background-color: #347cd2;
+}
+.btn-twitter
+{
+    background-color: #1ec4ff;
+}
+.btn-insta{
+    color: black;
+    background-color: #ffff;
+}
