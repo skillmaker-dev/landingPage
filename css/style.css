@@ -103,6 +103,11 @@ background: linear-gradient(180deg, rgba(255,109,109,1) 0%, rgba(255,68,104,1) 3
     justify-content: center;
     align-items: center;
     margin-right: 1rem;
+    transition: all 0.5s;
+    
+}
+.btn__social:hover{
+    transform: rotate(360deg);
 }
 
 .btn-fb{
@@ -199,7 +204,9 @@ background-color: #347cd2;
 .link-footer{
     color: darkgray;
 }
-
+.list:hover{
+    transform: translateX(5px);
+}
 .link-footer:hover{
     color: #ffff;
 }
@@ -241,6 +248,7 @@ background-color: #347cd2;
     font-size: 1.2rem;
 }
 .list{
+    transition: all 0.5s;
     margin-bottom: 1rem;
 }
 
