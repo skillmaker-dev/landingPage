@@ -6,9 +6,15 @@ li{
 
 /*Typography*/
 
-body{
+body{   
+     background-color: var(--blue);
     font-size: 62.5%;
     font-family: 'Work Sans',sans-serif ;
+    box-sizing: border-box;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -26,6 +32,15 @@ h3{
 p{
     font-size: 1.2rem;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1279px)
+{
+    p
+    {
+        font-size: 1rem;
+    }
+}
+
 /*colors*/
 :root{
     --blue: #33d2fd;
@@ -142,12 +157,13 @@ background-color: #347cd2;
 
 /*card*/
 .card-long{
-    width: 270px;
-    height: 320px;
+    width: 250px;
+    height: 300px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .card__heading{
     display: flex;
     flex-direction: row;
@@ -180,7 +196,19 @@ background-color: #347cd2;
 }
 
 .card__image{
-    width: 90px;
+    width: 30%;
+}
+@media screen and (min-width: 769px) and (max-width: 1279px)
+{
+    .card-long
+    {
+        width: 200px;
+    height: 250px;
+    }
+    .card__image
+    {
+        width: 30%;
+    }
 }
 .card-wide .card__image{
     width: 50px;
@@ -342,6 +370,52 @@ background-color: #347cd2;
     margin-left: 1.5rem;
 }
 
-body{
-    background-color: var(--blue);
+
+
+/* cards block */
+
+.smartphone{
+    /* margin-right: 10rem; */
+    align-self: center;
+    justify-self: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: minmax(min-content,max-content) minmax(min-content,max-content);
+    grid-template-rows: minmax(min-content,max-content) minmax(min-content,max-content);
+    gap: 2rem;
+    height: auto;
+    width: max-content;
+}
+.cards-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+}
+
+.box2
+{
+   position: relative;
+   top: 5rem;
+}
+
+.box3{
+    
+   position: relative;
+   right: 5rem;
+}
+
+.box4
+{
+    position: relative;
+    top: 5rem;
+    right: 5rem;
+} 
+
+@media screen and (min-width: 769px) and (max-width: 1279px)
+{
+    .cards-block
+    {
+        
+    }
 }
