@@ -319,4 +319,29 @@ background-color: #347cd2;
 }
 
 /*hero*/
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__heading , .hero__description
+{
+    text-align: center;
+    color: #ffff;
+}
+.hero__heading{
+    margin-bottom: 0;
+}
+.hero__description
+{
+    margin-bottom: 3rem;
+}
 
+.hero__buttons .btn__outline
+{
+    margin-left: 1.5rem;
+}
+
+body{
+    background-color: var(--blue);
+}
