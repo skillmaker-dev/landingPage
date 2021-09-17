@@ -7,7 +7,7 @@ li{
 /*Typography*/
 
 body{   
-     background-color: var(--blue);
+     /*background-color: var(--blue);*/
     font-size: 62.5%;
     font-family: 'Work Sans',sans-serif ;
     box-sizing: border-box;
@@ -445,3 +445,72 @@ background-color: #347cd2;
         top: 0;
     }
 }
+
+/* description section */
+
+.head_descr, .support_description
+{
+    max-width: 650px;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1022px)
+{
+    .head_descr
+    {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+    .h_d_heading , .h_d_text
+    {
+        text-align: center;
+        
+    }
+
+    .head_descr
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+/* support section */
+
+.support{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    gap: 2rem;
+}
+
+.support_description, .cards_wides
+{
+    justify-self: center;
+}
+
+@media screen and (max-width: 900px){
+.support{
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 1fr;
+}
+.cards_wides
+{
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+}
+.card-wide{
+    width: 90%;
+}
+.card-wide:hover{
+    max-height: 400px;
+}
+
+} 
+
