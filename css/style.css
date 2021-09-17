@@ -198,7 +198,7 @@ background-color: #347cd2;
 .card__image{
     width: 30%;
 }
-@media screen and (min-width: 769px) and (max-width: 1279px)
+@media screen and (min-width: 1050px) and (max-width: 1279px)
 {
     .card-long
     {
@@ -210,6 +210,8 @@ background-color: #347cd2;
         width: 30%;
     }
 }
+
+
 .card-wide .card__image{
     width: 50px;
     margin-right: 1.5rem;
@@ -412,10 +414,34 @@ background-color: #347cd2;
     right: 5rem;
 } 
 
-@media screen and (min-width: 769px) and (max-width: 1279px)
+@media screen and (min-width: 0px) and (max-width: 1049px)
 {
-    .cards-block
+    .cards-block{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box3{
+        right: 0rem;
+     }
+     .box4
     {
-        
+    right: 0rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 768px)
+{
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 ,.box2 ,.box3 ,.box4
+    {
+        top: 0;
     }
 }
