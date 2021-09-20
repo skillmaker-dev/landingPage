@@ -392,7 +392,7 @@ background-color: #347cd2;
 @media screen and (max-width: 767px) {
     .hero__buttons
     {
-        height: 100px;
+        height: 130px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -513,19 +513,36 @@ background-color: #347cd2;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px;
+    /*grid-template-rows: 600px;*/
     gap: 2rem;
+    max-height: 600px;
 }
 
 .support_description, .cards_wides
 {
     justify-self: center;
 }
+.support_3_phone{
+    justify-self: center;
+    align-self: center;
+}
+.support_description_2
+{
+    margin-top: 1rem;
+    justify-self: self-start;
+}
+
+
 
 @media screen and (max-width: 900px){
 .support{
     grid-template-rows: max-content max-content;
     grid-template-columns: 1fr;
+}
+.support_description .hero__buttons
+{
+    margin-right: auto;
+    margin-left: auto;
 }
 .cards_wides
 {
