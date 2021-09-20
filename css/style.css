@@ -20,6 +20,24 @@ body{
 h1{
     font-size: 4.5rem;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    p
+    {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 3rem;
+    }
+
+}
 
 h2{
    font-size: 3rem;
@@ -33,13 +51,7 @@ p{
     font-size: 1.2rem;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px)
-{
-    p
-    {
-        font-size: 1rem;
-    }
-}
+
 
 /*colors*/
 :root{
@@ -353,6 +365,7 @@ background-color: #347cd2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 800px;
 }
 .hero__heading , .hero__description
 {
@@ -366,10 +379,22 @@ background-color: #347cd2;
 {
     margin-bottom: 3rem;
 }
-
-.hero__buttons .btn__outline
+.hero__buttons
 {
-    margin-left: 1.5rem;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+    .hero__buttons
+    {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 
@@ -485,7 +510,7 @@ background-color: #347cd2;
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: max-content;
+    grid-template-rows: 500px;
     gap: 2rem;
 }
 
