@@ -52,8 +52,12 @@ h3{
 }
 p{
     font-size: 1.2rem;
+    color: #696c87;
 }
 
+h1,h2,h3{
+    color: #273449;
+}
 
 
 /*colors*/
@@ -364,6 +368,24 @@ background-color: #347cd2;
     align-items: center;
 }
 
+@media screen and (max-width: 860px) {
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 100px;
+    }
+    .subscribe p{
+        text-align: center;
+    }
+    .input-group input{
+        width: 90%;
+    }
+}
+
+
 /*hero*/
 .hero{
     display: flex;
@@ -428,10 +450,7 @@ background-color: #347cd2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: max-content;
 }
-.box1
-{
-    
-}
+
 .box2
 {
    position: relative;
@@ -495,7 +514,10 @@ background-color: #347cd2;
     max-width: 650px;
     align-self: center;
 }
-
+.h_d_text
+{
+    color: #ffff;
+}
 @media screen and (min-width: 768px) and (max-width: 1022px)
 {
     .head_descr
@@ -581,6 +603,10 @@ align-items: center;
 
 } 
 
+
+
+
+
 /* sections */
 
 
@@ -596,11 +622,18 @@ align-items: center;
 .section_2{
     padding-top: 4rem;
     padding-bottom: 3rem;
-
     width: 100%;
     background-color: #fafafc;
     height: max-content;
 }
+
+@media screen and (min-width: 768px) {
+    .section_2
+    {
+        height: 900px;
+    }
+}
+
 
 .section_3{
     height: max-content;
@@ -621,6 +654,7 @@ align-items: center;
 .section_7{
     height: max-content;
 }
+
 
 @media screen and (min-width: 900px) {
     .section_3 .support
