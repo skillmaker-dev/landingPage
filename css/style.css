@@ -208,8 +208,9 @@ background-color: #347cd2;
     transition: all 0.15s;
 }
 
-.card:hover{
+.card:hover,.card-open{
     background-color: var(--blue);
+    cursor: pointer;
 }
 
 .card:hover .card__text{
@@ -249,12 +250,16 @@ background-color: #347cd2;
     visibility: visible;
     opacity: 1;
 }
-.card-wide:hover{
+.card-wide:hover,.card-open{
     max-height: 150px;
+}
+.card-open .card__text{
+    color: white;
+    visibility: visible;
+    opacity: 1;
 }
 
 .card__text{
-  
     text-align: center;
     transition: all 0.15s;
 }
@@ -619,6 +624,10 @@ align-items: center;
     background-color: #fafafc;
     height: max-content;
 }
+.section_3 .support
+{
+    height: max-content;
+}
 
 @media screen and (min-width: 768px) {
     .section_2
@@ -654,7 +663,7 @@ justify-content: center;
 @media screen and (min-width: 900px) {
     .section_3 .support
 {
-      height: 650px;  
+      height: max-content;  
 }
 }
 

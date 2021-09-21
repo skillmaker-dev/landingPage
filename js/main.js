@@ -1,17 +1,7 @@
 
+let cards = document.querySelectorAll(".card-wide");
+cards.forEach((card) => card.addEventListener("click", function () {
+    this.classList.toggle("card-open");
+  }));
 
- var x = window.matchMedia("(min-width: 768px)")
 
-function myFunction(x) {
-    if (x.matches) { 
-        let cardHeight = document.getElementById("cardLong").offsetHeight;
-        console.log(cardHeight);
-        let cards = document.getElementById("cards");
-        cards.style.height = +cardHeight*2 + 170 + 'px';
-        console.log(cards.offsetHeight);
-    }
-  }
-  
- 
-  myFunction(x) ;
-  x.addListener(myFunction);
