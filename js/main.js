@@ -1,6 +1,6 @@
 
 
- var x = window.matchMedia("(min-width: 769px)")
+ var x = window.matchMedia("(min-width: 768px)")
 
 function myFunction(x) {
     if (x.matches) { 
@@ -14,4 +14,4 @@ function myFunction(x) {
   
  
   myFunction(x) ;
-  x.addEventListener("change",myFunction);
+  x.addListener(myFunction);

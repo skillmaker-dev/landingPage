@@ -218,7 +218,8 @@ background-color: #347cd2;
     .card-long
     {
         width: 200px;
-    height: 250px;
+        height: 250px;
+        padding: 4rem 2rem;
     }
     .card__image
     {
@@ -595,35 +596,41 @@ align-items: center;
 .section_2{
     padding-top: 4rem;
     padding-bottom: 3rem;
+
     width: 100%;
     background-color: #fafafc;
     height: max-content;
 }
-.section_3 .support
-{
-    height: 650px;
-}
+
 .section_3{
     height: max-content;
 }
 .section_4{
-    width: 100%;
     height: max-content;
     background-color: #fafafc;
 }
 .section_5{
     background-image: linear-gradient(to left top, #1dabf6, #0ab0f6, #00b5f5, #00baf4, #00bff3, #00c4f3, #00c9f3, #00cef2, #00d5f2, #00dcf1, #00e2f0, #14e9ed);
     height: max-content;
-    width: 100%;
 }
-.section_5 .support{
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .section_6{
     height: max-content;
+    padding: 5rem 0rem;
 }
 .section_7{
     height: max-content;
 }
+
+@media screen and (min-width: 900px) {
+    .section_3 .support
+{
+      height: 650px;  
+}
+}
+
+.section_1 , .section_2, .section_3,
+ .section_4, .section_5, .section_6
+ {
+    width: 100%;
+ }
