@@ -173,6 +173,18 @@ background-color: #347cd2;
     background-color: #ffff;
 }
 
+.btn-subscribe
+{
+    position: relative;
+    top: 32.5px;
+}
+
+@media screen and (max-width: 400px) {
+    .btn-subscribe
+{
+    width: 90%;
+}
+}
 /*card*/
 .card-long{
     width: 250px;
@@ -647,13 +659,17 @@ align-items: center;
 .section_5{
     background-image: linear-gradient(to left top, #1dabf6, #0ab0f6, #00b5f5, #00baf4, #00bff3, #00c4f3, #00c9f3, #00cef2, #00d5f2, #00dcf1, #00e2f0, #14e9ed);
     height: max-content;
-    display: flex;
+
 justify-content: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .section_6{
     height: max-content;
     padding: 5rem 0rem;
+    
 }
 .section_7{
     height: max-content;
