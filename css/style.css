@@ -1,12 +1,11 @@
 
-
+/* lists */
 li{
     list-style: none;
 }
 
 /*Typography*/
 body{   
-     /*background-color: var(--blue);*/
     font-size: 62.5%;
     font-family: 'Work Sans',sans-serif ;
     box-sizing: border-box;
@@ -181,6 +180,7 @@ background-color: #347cd2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .card__heading{
@@ -194,7 +194,9 @@ background-color: #347cd2;
     transition: visibility 0s, opacity 0.5s linear;
 }
 
-
+.card-long:hover{
+    transform: scale(1.1);
+}
 
 .card{
     margin-top: 1rem;
@@ -217,7 +219,7 @@ background-color: #347cd2;
 .card__image{
     width: 30%;
 }
-@media screen and (min-width: 1050px) and (max-width: 1279px)
+@media screen and (min-width: 1050px) and (max-width: 1395px)
 {
     .card-long
     {
@@ -394,6 +396,7 @@ background-color: #347cd2;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
 }
 .hero__heading , .hero__description
 {
@@ -433,7 +436,6 @@ background-color: #347cd2;
 /* cards block */
 
 .smartphone{
-    /* margin-right: 10rem; */
     align-self: center;
     justify-self: center;
 }
@@ -471,7 +473,7 @@ background-color: #347cd2;
     
 } 
 
-@media screen and (min-width: 0px) and (max-width: 1049px)
+@media screen and (min-width: 0px) and (max-width: 1190px)
 {
     .cards-block{
         display: flex;
@@ -514,7 +516,7 @@ background-color: #347cd2;
     max-width: 650px;
     align-self: center;
 }
-.h_d_text
+.section_5 .h_d_text
 {
     color: #ffff;
 }
@@ -549,10 +551,7 @@ background-color: #347cd2;
     padding:5rem 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: 600px;*/
     gap: 2rem;
-    /* max-height: 600px; */
-    /* margin-top: 10rem; */
 }
 
 .support_description, .cards_wides
@@ -603,13 +602,7 @@ align-items: center;
 
 } 
 
-
-
-
-
 /* sections */
-
-
 
 
 .section_1
@@ -645,6 +638,8 @@ align-items: center;
 .section_5{
     background-image: linear-gradient(to left top, #1dabf6, #0ab0f6, #00b5f5, #00baf4, #00bff3, #00c4f3, #00c9f3, #00cef2, #00d5f2, #00dcf1, #00e2f0, #14e9ed);
     height: max-content;
+    display: flex;
+justify-content: center;
 }
 
 .section_6{
